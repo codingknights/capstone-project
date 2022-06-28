@@ -79,14 +79,35 @@
       flex: 0 0 auto;
       width: 40%;
     }
-    .webname{
-      font-family: 'Yellowtail', cursive;
+    .webname {
+      font-family: 'Stick No Bills', sans-serif;
+
+      position: inherit;
+      top: 30px;
+      background: linear-gradient(90deg, #ff0000, #ff00f3, #0033ff, #ff00c4, #ff0000);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-size: 400%;
+      font-size: 50px;
+      letter-spacing: 10px;
+      font-weight: 600;
+      word-spacing: 5px;
+      animation: animate 10s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        background-position: 0%;
+      }
+
+      100% {
+        background-position: 400%;
+      }
+
     }
   </style>
   <!--        link for the font goes here               -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <title>Laptop finder</title>
 </head>
